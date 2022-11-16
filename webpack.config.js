@@ -41,7 +41,7 @@ function generateCopyPlugins(templateDir) {
 }
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/js/index.js',
   resolve: {
     alias: {
       '@src': path.resolve(__dirname, 'src/')

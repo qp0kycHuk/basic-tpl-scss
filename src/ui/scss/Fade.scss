@@ -1,6 +1,10 @@
 // out:false
 
 @mixin Fade {
+  &-0 {
+    opacity: 0;
+  }
+
   &-10 {
     opacity: .1;
   }
@@ -43,5 +47,5 @@
     @include Fade;
 
   }
-  
+
 }

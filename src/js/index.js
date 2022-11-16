@@ -1,16 +1,16 @@
-import showPass from "./js/show-pass";
-import fancybox from "./js/fancybox";
-import rangeSlider from './js/range-slider';
-import theme from './js/theme';
-import inputmask from "./js/inputmask";
-import scrollTo from "./js/scrollTo";
+import showPass from "./show-pass";
+import fancybox from "./fancybox";
+import rangeSlider from './range-slider';
+import theme from './theme';
+import inputmask from "./inputmask";
+import scrollTo from "./scrollTo";
 import tab from 'npm-kit-tab';
 import toggle from 'npm-kit-toggle';
 import ripple from 'npm-kit-ripple';
 import Swiper, { Navigation, Pagination, Scrollbar, Autoplay, Grid, Thumbs, EffectFade, Lazy } from 'swiper';
 
 
-import './index.scss';
+import '../scss/index.scss';
 
 Swiper.use([Navigation, Pagination, Scrollbar, Autoplay, Grid, Thumbs, EffectFade, Lazy]);
 Swiper.defaults.touchStartPreventDefault = false
