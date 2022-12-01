@@ -5,7 +5,11 @@
 }
 
 @mixin getColors($color, $name) {
-  @if ($name=='primary'or $name=='second'or $name=='black'or $name=='white') {
+  @if ($name=='none') {
+    --color-#{$name}: #{$color};
+  }
+
+  @else {
     $rgb                   : rgbValuesFromHex($color);
     --color-#{$name}       : #{$color};
     --color-#{$name}-10    : rgba(#{$rgb}, 0.10);
@@ -19,10 +23,6 @@
     --color-#{$name}-90    : rgba(#{$rgb}, 0.90);
     --color-#{$name}--light: #{lighten($color, 5%)};
     --color-#{$name}--dark : #{darken($color, 5%)};
-  }
-
-  @else {
-    --color-#{$name}: #{$color};
   }
 }
 
@@ -81,19 +81,19 @@
     &-100 {
       #{$value}: 100%;
     }
-  
+
     &-50 {
       #{$value}: 50%;
     }
-  
+
     &-0 {
       #{$value}: 0;
     }
-  
+
     &-content {
       #{$value}: max-content;
     }
-  
+
     &-auto {
       #{$value}: auto !important;
     }
@@ -102,8 +102,8 @@
 
 @mixin getBorder($value) {
   #{$value}: {
-      width: 1px;
-      style: solid;
-      color: var(--color-grey);
+    width: 1px;
+    style: solid;
+    color: var(--color-grey);
   }
 }
