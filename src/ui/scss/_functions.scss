@@ -100,6 +100,29 @@
   }
 }
 
+@mixin getDistance($value) {
+  @include AddMedia {
+      @for $i from 0 through 10 {
+          &-#{$i} {
+              #{$value}: #{calc(4px * $i)};
+          }
+      }
+  }
+}
+
+@mixin getDistancetXY($property, $value-first, $value-last) {
+  @include AddMedia {
+      @for $i from 0 through 10 {
+          &-#{$i} {
+              #{$property}: {
+                  #{$value-first}: calc(4px * $i);
+                  #{$value-last} : calc(4px * $i);
+              }
+          }
+      }
+  }
+}
+
 @mixin getBorder($value) {
   #{$value}: {
     width: 1px;
