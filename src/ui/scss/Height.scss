@@ -1,22 +1,11 @@
-// out:false
-@mixin Height {
-  &-100 {
-    height: 100%;
-  }
-
-  &-50 {
-    height: 50%;
-  }
-
-  &-auto {
-    height: auto !important;
-  }
+.h {
+  @include getWidthOrHeight('height');
 }
 
-.h {
-  @include AddMedia{
-    @include Height;
+.min-h {
+  @include getWidthOrHeight('min-height');
+}
 
-  }
-
+.max-h {
+  @include getWidthOrHeight('max-height');
 }

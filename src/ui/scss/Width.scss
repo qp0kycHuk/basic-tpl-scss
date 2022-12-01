@@ -1,21 +1,11 @@
-// out:false
-@mixin Width {
-  &-100 {
-    width: 100%;
-  }
-
-  &-50 {
-    width: 50%;
-  }
-
-  &-auto {
-    width: auto !important;
-  }
+.w {
+  @include getWidthOrHeight('width');
 }
 
-.w {
-	@include AddMedia {
-		@include Width;
-	}
+.min-w {
+  @include getWidthOrHeight('min-width');
+}
 
+.max-w {
+  @include getWidthOrHeight('max-width');
 }
