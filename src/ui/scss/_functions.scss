@@ -26,6 +26,40 @@
   }
 }
 
+@mixin getAlignItemsAndContent($property) {
+  .#{$property} {
+    &-start {
+      #{$property}: flex-start;
+    }
+
+    &-center {
+      #{$property}: center;
+    }
+
+    &-end {
+      #{$property}: flex-end;
+    }
+
+    &-stretch {
+      #{$property}: stretch;
+    }
+
+    @if ($property=='align-content'or $property=='justify-content') {
+      &-between {
+        #{$property}: space-between;
+      }
+
+      &-around {
+        #{$property}: space-around;
+      }
+
+      &-evenly {
+        #{$property}: space-evenly;
+      }
+    }
+  }
+}
+
 @mixin AddMedia() {
   @content;
 
