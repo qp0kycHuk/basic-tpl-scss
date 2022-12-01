@@ -1,8 +1,18 @@
-// out: false
+$colors: ('none': rgba(0, 0, 0, 0),
+    'primary': #D21C4B,
+    'sec': #CE9B44,
+    'black': #000000,
+    'white': #ffffff,
+    'grey': #f6f7f9,
+    'gray': #b2b2b2,
+    'blue': #0092E4,
+    'red': #be1b1b,
+    'green': #27ae60,
+    'yellow': #ffff00);
 
 $container_md: 650px;
 $container_lg: 1024px;
 
-$sm   : 425.98px;
-$md   : $container_md + 29.98px;
-$lg   : $container_lg + 29.98px;
+$sm : 425.98px;
+$md : $container_md+29.98px;
+$lg : $container_lg+29.98px;
