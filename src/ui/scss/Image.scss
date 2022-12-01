@@ -1,7 +1,3 @@
-// out:false
-
-
-
 
 .image {
 	overflow: hidden;
@@ -33,7 +29,6 @@
 			left    : 0;
 			top     : 0;
 
-
 		}
 	}
 
@@ -41,8 +36,6 @@
 		&:before {
 			padding-bottom: 100%;
 		}
-
-
 	}
 
 
@@ -50,8 +43,6 @@
 		&:before {
 			padding-bottom: calc(100% * 3 / 4);
 		}
-
-
 	}
 
 	&--cover {

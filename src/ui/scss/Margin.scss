@@ -1,6 +1,4 @@
-// out: false
 
-@import "./functions";
 
 @mixin Margin($direction:false) {
 	@for $i from 0 through 10 {
