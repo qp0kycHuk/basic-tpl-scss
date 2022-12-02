@@ -1,4 +1,3 @@
-
 @mixin btnColor($name, $accent:#fff) {
 	&--#{$name} {
 		--btn-color      : var(--color-#{$name});
@@ -118,20 +117,7 @@
 		}
 	}
 
-
-
-	&:not(&--fill):not(&--light):not(&--contur):not(&--link):not(&--white-bg) {
-		@media(hover) {
-			&:hover {
-				background: var(--btn-color-light);
-
-			}
-		}
-	}
-
-
 	// variant
-
 
 
 	&--fill {
@@ -139,14 +125,11 @@
 		color     : var(--btn-text);
 		border    : transparent;
 
-
-
 		&:focus:not(:active) {
 			background: var(--btn-color);
 			box-shadow: 0 0 0 5px var(--btn-color-light);
 
 		}
-
 	}
 
 	&--light {
@@ -228,5 +211,4 @@
 	&-fab {
 		border-radius: 50%;
 	}
-
 }
