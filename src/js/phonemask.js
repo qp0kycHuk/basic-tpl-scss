@@ -28,15 +28,13 @@ export function getMaskedValue(value) {
 
 export function isComplete(value) {
     const numberValue = value.replace(/\D/g, '')
-    console.log(numberValue);
-
     return phoneCompleteRegexp.test(numberValue)
 }
 
 
-function init() {
+function init(selector) {
     document.addEventListener('input', (event) => {
-        if (event.target.type !== 'tel') return
+        if (!event.target.matches(selector)) return
         const maskedValue = getMaskedValue(event.target.value)
         event.target.value = maskedValue
 

@@ -2,7 +2,7 @@ import showPass from "./show-pass";
 import fancybox from "./fancybox";
 import rangeSlider from './range-slider';
 import theme from './theme';
-import inputmask from "./inputmask";
+import phonemask from "./phonemask";
 import scrollTo from "./scrollTo";
 import tab from 'npm-kit-tab';
 import toggle from 'npm-kit-toggle';
@@ -27,7 +27,7 @@ function loadHandler() {
 	toggle.init()
 	ripple.init()
 	theme.init()
-	inputmask.init(document)
+	phonemask.init('[type="tel"]')
 
 	ripple.attach('.btn')
 	ripple.attach('.waved')
