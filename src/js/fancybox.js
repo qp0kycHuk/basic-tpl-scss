@@ -11,7 +11,7 @@ const init = () => {
   const defaultOptions = {
     dragToClose: false,
     mainClass: 'fancybox-custom-modal',
-
+    type: 'ajax'
   }
 
   Fancybox.bind('[data-fancybox-modal]', defaultOptions)
